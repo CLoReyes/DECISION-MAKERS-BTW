@@ -5,9 +5,9 @@ public class DECISIONMAKER
 		
 		public static void main(String[] args)
 			{
-				name();
-				question();
-				iThinkTheNextHeirarchyShouldBeInputs();
+	//			name();
+	//			question();
+				userInputs();
 			}
 
 		
@@ -31,7 +31,7 @@ public class DECISIONMAKER
 				System.out.println("What an interesting dilema you got there. But don't worry, I will help you out.");
 			}
 
-		private static void iThinkTheNextHeirarchyShouldBeInputs()
+		private static void userInputs()
 			{
 //				boolean restart = true;
 //				while (restart)
@@ -52,7 +52,7 @@ public class DECISIONMAKER
 									String[] content = new String [optionNum];
 									for (int i = 0; i < optionNum; i++)
 										{
-											System.out.println("Give me option #" + (i+1));
+											System.out.println("Give me option " + (i+1));
 											Scanner choices = new Scanner (System.in);
 											
 											String answer = choices.nextLine();
