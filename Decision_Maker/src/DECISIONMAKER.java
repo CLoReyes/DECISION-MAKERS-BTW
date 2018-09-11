@@ -5,8 +5,8 @@ public class DECISIONMAKER
 		
 		public static void main(String[] args)
 			{
-	//			name();
-	//			question();
+				name();
+				question();
 				iThinkTheNextHeirarchyShouldBeInputs();
 			}
 
@@ -33,6 +33,42 @@ public class DECISIONMAKER
 
 		private static void iThinkTheNextHeirarchyShouldBeInputs()
 			{
+//				boolean restart = true;
+//				while (restart)
+//					
+//					{
+						Scanner options = new Scanner (System.in);
+						System.out.println("To make it a little bit easier on me, give me the number of options you currently have.");
+						int optionNum = options.nextInt();
+						
+							if (optionNum == 1)
+								{
+									System.out.println("I think you already know your answer.");
+								}
+							else
+								{
+									System.out.println("Alright so " + optionNum + " options? I can work with that.");
+									
+									String[] content = new String [optionNum];
+									for (int i = 0; i < optionNum; i++)
+										{
+											System.out.println("Give me option #" + (i+1));
+											Scanner choices = new Scanner (System.in);
+											
+											String answer = choices.nextLine();
+											content [i] = answer;
+										}
+									System.out.println("My final verdict is this!");
+									System.out.println("You should choose " + content [(int) (Math.random()*optionNum)] + ".");
+								}
+						
+						
+						
+								
+								
+//						System.out.println("Now, please input choice #" + );
+//					}
+				
 				
 			}
 	}
