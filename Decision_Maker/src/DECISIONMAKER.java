@@ -33,10 +33,11 @@ public class DECISIONMAKER
 
 		private static void userInputs()
 			{
-//				boolean restart = true;
-//				while (restart)
-//					
-//					{
+				boolean restart = true;
+				while (restart)
+					
+					{
+						
 						Scanner options = new Scanner (System.in);
 						System.out.println("To make it a little bit easier on me, give me the number of options you currently have.");
 						int optionNum = options.nextInt();
@@ -52,7 +53,7 @@ public class DECISIONMAKER
 									String[] content = new String [optionNum];
 									for (int i = 0; i < optionNum; i++)
 										{
-											System.out.println("Give me option " + (i+1));
+											System.out.println("Give me option " + (i+1) + ".");
 											Scanner choices = new Scanner (System.in);
 											
 											String answer = choices.nextLine();
@@ -61,13 +62,26 @@ public class DECISIONMAKER
 									System.out.println("My final verdict is this!");
 									System.out.println("You should choose " + content [(int) (Math.random()*optionNum)] + ".");
 								}
+						System.out.println("Now, need any other questions answered?");
+						System.out.println("Type 1 for Yes or 2 for No.");
+						
+						String redo = options.nextLine();
+							
+							if (redo.equals("1"))
+								{
+									System.out.println("Alright, what's the question?");
+									restart = true;
+								}
+							
+							else if (redo.equals('2'))
+								{
+									System.out.println("I am glad to be of assistance whenever you feel indecisive.");
+									restart = false;
+								}
+	
 						
 						
-						
-								
-								
-//						System.out.println("Now, please input choice #" + );
-//					}
+					}
 				
 				
 			}
