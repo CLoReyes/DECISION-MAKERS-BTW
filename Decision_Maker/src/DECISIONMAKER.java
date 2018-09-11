@@ -6,8 +6,11 @@ public class DECISIONMAKER
 		public static void main(String[] args)
 			{
 	//			name();
-				idkWhatthisIsyet();
+	//			question();
+				iThinkTheNextHeirarchyShouldBeInputs();
 			}
+
+		
 
 		private static void name()
 			{
@@ -18,7 +21,7 @@ public class DECISIONMAKER
 				
 			}
 
-		private static void idkWhatthisIsyet()
+		private static void question()
 			{
 				Scanner questions = new Scanner (System.in);
 				System.out.println("You will never have to make another hard decision on your own ever again!");
@@ -28,5 +31,8 @@ public class DECISIONMAKER
 				System.out.println("What an interesting dilema you got there. But don't worry, I will help you out.");
 			}
 
-
+		private static void iThinkTheNextHeirarchyShouldBeInputs()
+			{
+				
+			}
 	}
