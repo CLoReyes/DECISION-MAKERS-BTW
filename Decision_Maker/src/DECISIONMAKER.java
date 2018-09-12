@@ -65,15 +65,15 @@ public class DECISIONMAKER
 						System.out.println("Now, need any other questions answered?");
 						System.out.println("Type 1 for Yes or 2 for No.");
 						
-						String redo = options.nextLine();
+						int redo = options.nextInt();
 							
-							if (redo.equals("1"))
+							if (redo == 1)
 								{
-									System.out.println("Alright, what's the question?");
+									System.out.println("intitiating...");
 									restart = true;
 								}
 							
-							else if (redo.equals('2'))
+							else if (redo == 2)
 								{
 									System.out.println("I am glad to be of assistance whenever you feel indecisive.");
 									restart = false;
